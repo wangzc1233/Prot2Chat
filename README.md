@@ -1,18 +1,60 @@
 # Prot2Chat
+
 Welcome to Prot2Chat repository!
 
 Paper: https://arxiv.org/abs/2502.06846
 
-STEP1、
-Prepare ProteinMPNN as shown in prot2chat/ProteinMPNN_m/proteinmpnn.md
+Here is a quick tutorial for the Prot2Chat protein Q&A system, which enables you to obtain information about proteins through an interactive Q&A mode on the web page.
 
-STEP2、
-```shell
+
+
+## Enviroment installation
+
+### Create a virtual environment
+
+```
+conda create -n prot2chat python=3.9
+conda activate prot2chat
+```
+
+### Install packages
+
+```
 bash prot2chat/requirement.sh
 ```
-STEP3、
-Download base_model and adapter_checkpoint from  https://drive.google.com/file/d/1UgzkSda2wJew95FrVfF246IilB5ekTSc/view?usp=drive_link
-STEP4、
-```python
-python generate.py  --base_model_path=your_path_to_base_model --lora_weight_path=prot2chat/lora_wight/lora_weight.pth --pdb_path=prot2chat/pdbs --checkpoint_path=your_path_to_adapter_checkpoint --conversation_data_path=prot2chat/QA_data/test.json
+
+## Prepare the models
+
+Download base_model_weight from  https://drive.google.com/file/d/1UgzkSda2wJew95FrVfF246IilB5ekTSc/view?usp=drive_link; 
+
+Download new adapter_weight and lora_weight from https://drive.google.com/file/d/1vb4K2oufxzyS5BeO25hyaJBY9hqR7dn4/view?usp=drive_link. (It also includes the modified ProteinMPNN we used.)
+
+Then clone our project:
+
 ```
+git clone https://github.com/wangzc1233/Prot2Chat.git
+```
+
+## Prepare input data
+
+We have provided several PDB file samples in `/pdbs`, and some question - answer samples in `/QA_data`. You can also use your own protein and Q&A data.
+
+
+## Run Prot2Chat in Web
+
+### Use `demo.py`
+
+You should replace the `/your/path/to/prot2chat` to your own path to `prot2chat` directory.
+
+```
+cd /your/path/to/prot2chat
+python demo.py --model_path your_path_to_base_model_weight --lora_path your_path_to_lora_weight --adapter_path your_path_to_adapter_weight --port your_port_ID --gpu your_GPU_IDs
+```
+
+**After a successful run, access `http://localhost:your_port_ID/` in your local browser. The effect is as follows:**
+
+![屏幕截图 2025-06-19 143854](C:\Users\Scorpio wangzc\Desktop\屏幕截图 2025-06-19 143854.png)
+
+**Select a protein PDB file and enter your question to get an answer.**
+
+![屏幕截图 2025-06-19 144015](C:\Users\Scorpio wangzc\Desktop\屏幕截图 2025-06-19 144015.png)
