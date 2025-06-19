@@ -37,7 +37,7 @@ git clone https://github.com/wangzc1233/Prot2Chat.git
 
 ## Prepare input data
 
-We have provided several PDB file samples in `/pdbs`, and some question - answer samples in `/QA_data`. You can also use your own protein and Q&A data.
+We have provided several PDB file(providing protein structure and sequence information) samples in `/pdbs`, and some question - answer samples in `/QA_data`. You can also use your own protein and Q&A data.
 
 
 ## Run Prot2Chat in Web
