@@ -57,4 +57,4 @@ python demo.py --model_path your_path_to_base_model_weight --lora_path your_path
 
 **Select a protein PDB file and enter your question to get an answer.**
 
-![p2](https://github.com/wangzc1233/Prot2Chat/tree/main/prot2chat/pic/p1.png)
+![p2](prot2chat/pic/p1.png)
