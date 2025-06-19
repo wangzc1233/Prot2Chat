@@ -53,8 +53,8 @@ python demo.py --model_path your_path_to_base_model_weight --lora_path your_path
 
 **After a successful run, access `http://localhost:your_port_ID/` in your local browser. The effect is as follows:**
 
-![p1](\prot2chat\pic\p1.png)
+![p1](https://github.com/wangzc1233/prot2chatpic/p1.png)
 
 **Select a protein PDB file and enter your question to get an answer.**
 
-![p2](\prot2chat\pic\p2.png)
+![p2]([\prot2chat\pic\p2.png](https://github.com/wangzc1233/prot2chatpic/p1.png))
