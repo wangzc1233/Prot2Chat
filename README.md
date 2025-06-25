@@ -35,6 +35,7 @@ Then clone our project:
 git clone https://github.com/wangzc1233/Prot2Chat.git
 ```
 
+Don't forget to place the downloaded model and weight files in the specified folders. For example, put the ProteinMPNN in `prot2chat/ProteinMPNN`.
 ## Prepare input data
 
 We have provided several PDB file(providing protein structure and sequence information) samples in `/pdbs`, and some question - answer samples in `/QA_data`. You can also use your own protein file and Q&A data.
