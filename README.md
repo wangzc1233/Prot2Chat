@@ -17,10 +17,19 @@ conda create -n prot2chat python=3.9
 conda activate prot2chat
 ```
 
-### Install packages
+Then clone our project:
 
 ```
-bash prot2chat/requirement.sh
+git clone https://github.com/wangzc1233/Prot2Chat.git
+```
+
+### Install packages
+
+You should replace the `/your/path/to/prot2chat` to your own path to `prot2chat` directory.
+
+```
+cd /your/path/to/prot2chat
+bash requirement.sh
 ```
 
 ## Prepare the models
@@ -29,11 +38,7 @@ Download base_model_weight from  https://drive.google.com/file/d/1UgzkSda2wJew95
 
 Download new adapter_weight and lora_weight from https://drive.google.com/file/d/1vb4K2oufxzyS5BeO25hyaJBY9hqR7dn4/view?usp=drive_link. (It also includes the modified ProteinMPNN we used.)
 
-Then clone our project:
 
-```
-git clone https://github.com/wangzc1233/Prot2Chat.git
-```
 
 Don't forget to place the downloaded model and weight files in the specified folders. For example, put the ProteinMPNN in `prot2chat/ProteinMPNN`.
 ## Prepare input data
