@@ -2,7 +2,7 @@
 
 Welcome to Prot2Chat repository!
 
-Paper: https://arxiv.org/abs/2502.06846
+Paper: https://doi.org/10.1093/bioinformatics/btaf396 (https://arxiv.org/abs/2502.06846)
 
 Here is a quick tutorial for the Prot2Chat protein Q&A system, which enables you to obtain information about proteins through an interactive Q&A mode on the web page.
 
