@@ -38,7 +38,7 @@ Download base_model_weight from  https://drive.google.com/file/d/1UgzkSda2wJew95
 
 Download new adapter_weight and lora_weight from https://drive.google.com/file/d/1vb4K2oufxzyS5BeO25hyaJBY9hqR7dn4/view?usp=drive_link. (It also includes the modified ProteinMPNN we used.)
 
-
+You can also find and download the model weight files at https://huggingface.co/zcw51699/prot2chat/tree/main/zcw51699/prot2chat.
 
 Don't forget to place the downloaded model and weight files in the specified folders. For example, put the ProteinMPNN in `prot2chat/ProteinMPNN`.
 ## Prepare input data
